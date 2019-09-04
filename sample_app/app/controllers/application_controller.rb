@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
-  protect_from_frogery with: :exception
+  protect_from_forgery with: :exception
 
   def hello
-    render text: "hello, world!"
+    render html: "hello, world!"
   end
 end
