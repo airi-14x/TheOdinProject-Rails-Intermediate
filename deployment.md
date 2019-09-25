@@ -20,3 +20,6 @@
 #### Running Rails Server
 
 - `rails server -p 9000`
+
+#### Running Test Suite
+- `rails test`
