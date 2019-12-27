@@ -12,4 +12,5 @@ Creation: August 30th 2019
 | Routing | November 5th 2019|
 | Controllers | November 13th 2019|
 | Views | December 10th 2019|
-| Asset Pipeline | |
+| Asset Pipeline | December 27th 2019 |
+| Project - Warmup: Sending Params with RestClient | |
