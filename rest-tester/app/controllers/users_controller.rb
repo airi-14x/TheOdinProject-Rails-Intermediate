@@ -14,5 +14,7 @@ class UsersController < ApplicationController
   def edit
     @name = "I am Edit action"
   end
-
+  def create
+    @name = "I am Create action"
+  end
 end

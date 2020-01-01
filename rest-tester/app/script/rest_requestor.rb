@@ -10,6 +10,6 @@ create_url = "http://localhost:3000/users"
 #puts RestClient.get(index_url)
 #puts RestClient.get(show_url)
 #puts RestClient.get(new_url)
-puts RestClient.get(edit_url)
+#puts RestClient.get(edit_url)
 
-#puts RestClient.post(create_url,"")
+puts RestClient.post(create_url,"")
