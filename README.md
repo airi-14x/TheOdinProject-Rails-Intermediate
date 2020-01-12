@@ -15,4 +15,8 @@ Creation: August 30th 2019
 | Views | December 10th 2019|
 | Asset Pipeline | December 27th 2019 |
 | Project - Warmup: Sending Params with RestClient | December 29th 2019 |
-| Active Record Basics | |
+| Assignment - Active Record Basics: | |
+| - Basic Active Record | |
+| - Migrations | |
+| - Validations | |
+| - Associations | |
