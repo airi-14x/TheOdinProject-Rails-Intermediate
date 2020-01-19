@@ -17,6 +17,6 @@ Creation: August 30th 2019
 | Project - Warmup: Sending Params with RestClient | December 29th 2019 |
 | Assignment - Active Record Basics: | |
 | - Basic Active Record | January 13th 2020 |
-| - Migrations | |
+| - Migrations | January 19th 2020|
 | - Validations | |
 | - Associations | |
