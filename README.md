@@ -15,8 +15,18 @@ Creation: August 30th 2019
 | Views | December 10th 2019|
 | Asset Pipeline | December 27th 2019 |
 | Project - Warmup: Sending Params with RestClient | December 29th 2019 |
-| Assignment - Active Record Basics: | |
+| Assignment - Active Record Basics: | January 21st 2020|
 | - Basic Active Record | January 13th 2020 |
 | - Migrations | January 19th 2020|
-| - Validations | |
-| - Associations | |
+| - Validations | January 21st 2020|
+| - Associations | January 21st 2020|
+| Project - Building with Active Record | |
+| - Warmup: Thinking Data First | |
+| - Data Model Task | |
+| - Project 1: RoR Ch.6 | |
+| - Project 2: Micro-Reddit | |
+| >> Get Started | |
+| >> Playing with Validations| |
+| >> Playing with Associations| |
+| >> Add in Commenting| |
+
