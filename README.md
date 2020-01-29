@@ -21,7 +21,7 @@ Creation: August 30th 2019
 | - Validations | January 21st 2020|
 | - Associations | January 21st 2020|
 | Project - Building with Active Record | |
-| - Warmup: Thinking Data First | |
+| - Warmup: Thinking Data First | January 28th 2020|
 | - Data Model Task | |
 | - Project 1: RoR Ch.6 | |
 | - Project 2: Micro-Reddit | |
