@@ -6,6 +6,7 @@ Creation: August 30th 2019
 | Ch.3: Static Pages | October 8th 2019 |
 | Ch.4: Rails-Flavoured Ruby | October 28th 2019|
 | Ch.5: Filling in the Layout | January 6th 2020|
+| Ch.6: Modeling Users | February 9th 2020|
 
 
 | Ruby on Rails Track | Completion Date |
@@ -23,7 +24,7 @@ Creation: August 30th 2019
 | Project - Building with Active Record | |
 | - Warmup: Thinking Data First | January 28th 2020|
 | - Data Model Task | |
-| - Project 1: RoR Ch.6 | |
+| - Project 1: RoR Ch.6 | February 9th 2020|
 | - Project 2: Micro-Reddit | |
 | >> Get Started | |
 | >> Playing with Validations| |
