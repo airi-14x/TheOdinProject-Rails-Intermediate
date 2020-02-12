@@ -25,8 +25,7 @@ Creation: August 30th 2019
 | - Data Model Task | |
 | - Project 1: RoR Ch.6 | |
 | - Project 2: Micro-Reddit | |
-| >> Get Started | |
+| >> Get Started | February 11th 2020|
 | >> Playing with Validations| |
 | >> Playing with Associations| |
 | >> Add in Commenting| |
-
