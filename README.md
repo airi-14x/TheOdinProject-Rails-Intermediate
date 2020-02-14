@@ -21,12 +21,12 @@ Creation: August 30th 2019
 | - Migrations | January 19th 2020|
 | - Validations | January 21st 2020|
 | - Associations | January 21st 2020|
-| Project - Building with Active Record | |
+| Project - Building with Active Record ||
 | - Warmup: Thinking Data First | January 28th 2020|
 | - Data Model Task | |
 | - Project 1: RoR Ch.6 | February 9th 2020|
-| - Project 2: Micro-Reddit | |
+| - Project 2: Micro-Reddit | February 13th 2020|
 | >> Get Started | February 11th 2020|
-| >> Playing with Validations| |
-| >> Playing with Associations| |
-| >> Add in Commenting| |
+| >> Playing with Validations| February 13th 2020|
+| >> Playing with Associations| February 13th 2020|
+| >> Add in Commenting| February 13th 2020|
