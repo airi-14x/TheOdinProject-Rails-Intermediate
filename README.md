@@ -33,9 +33,9 @@ Creation: August 30th 2019
 | >> Playing with Associations| February 13th 2020|
 | >> Add in Commenting| February 13th 2020|
 
-| Form Basics |  |
+| Forms and Authentication |  |
 | --------| -----|
-| - Intro | March 10th 2020 |
+| - Form Basics: Intro | March 10th 2020 |
 | Assignment - Form Basics: | |
 | - Rails Guide on Form Helpers (Section 1 -> 3.2) | |
 | - Skim Section 3.3 -> 7| |
