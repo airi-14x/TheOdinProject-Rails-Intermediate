@@ -38,7 +38,7 @@ Creation: August 30th 2019
 | - Form Basics: Intro | March 10th 2020 |
 | Assignment - Form Basics: | |
 | - Rails Guide on Form Helpers (Section 1 -> 3.2) | April 12th 2020 |
-| - Skim Section 3.3 -> 7| |
+| - Skim Section 3.3 -> 7| WIP |
 | - Read Section 7.1 -> 7.2| |
 | - Rails Guide on Validations - Section 8| |
 
