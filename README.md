@@ -36,10 +36,15 @@ Creation: August 30th 2019
 | Forms and Authentication |  |
 | --------| -----|
 | - Form Basics: Intro | March 10th 2020 |
-| Assignment - Form Basics: | |
+| Assignment - Form Basics | |
 | - Rails Guide on Form Helpers (Section 1 -> 3.2) | April 12th 2020 |
-| - Skim Section 3.3 -> 7| WIP |
-| - Read Section 7.1 -> 7.2| |
-| - Rails Guide on Validations - Section 8| |
-
-
+| - Skim Section 3.3 -> 7| May 10th 2020 |
+| - Read Section 7.1 -> 7.2| May 10th 2020 |
+| - Rails Guide on Validations - Section 8| May 10th 2020 |
+| Project - Forms | |
+| - Back End Setup | |
+| - HTML Form | |
+| - Railsy Forms with #form_tag| |
+| - Railsy-er Forms with #form_for| |
+| - Editing| |
+| - Extra Credit| |
