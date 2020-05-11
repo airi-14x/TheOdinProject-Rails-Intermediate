@@ -42,7 +42,7 @@ Creation: August 30th 2019
 | - Read Section 7.1 -> 7.2| May 10th 2020 |
 | - Rails Guide on Validations - Section 8| May 10th 2020 |
 | Project - Forms | |
-| - Back End Setup | |
+| - Back End Setup | May 11th 2020 |
 | - HTML Form | |
 | - Railsy Forms with #form_tag| |
 | - Railsy-er Forms with #form_for| |
