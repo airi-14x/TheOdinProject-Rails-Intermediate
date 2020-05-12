@@ -1,0 +1,13 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <form action="/users" method="post" accept-charset="UTF-8">
+    <label for="username">Username:</label>
+    <input type="text" name="form__username" id="username" value="">
+    <label for="password">Password:</label>
+    <input type="password" name="form__password" id="password" value="">
+    <label for="email">Email:</label>
+    <input type="email" name="form__email" id="email" value=""><br>
+    <input type="hidden" name="form__authenticity-token" value="<%= form_authenticity_token %>">
+    <input type="submit" name="form__submit" value="Submit">
+  </form>
