@@ -3,11 +3,11 @@
 
   <form action="/users" method="post" accept-charset="UTF-8">
     <label for="username">Username:</label>
-    <input type="text" name="form__username" id="username" value="">
+    <input type="text" name="user[username]" id="username" value="">
     <label for="password">Password:</label>
-    <input type="password" name="form__password" id="password" value="">
+    <input type="password" name="user[password]" id="password" value="">
     <label for="email">Email:</label>
-    <input type="email" name="form__email" id="email" value=""><br>
+    <input type="email" name="user[email]" id="email" value=""><br>
     <input type="hidden" name="form__authenticity-token" value="<%= form_authenticity_token %>">
     <input type="submit" name="form__submit" value="Submit">
   </form>
