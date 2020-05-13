@@ -2,12 +2,16 @@
 
 class UsersController < ApplicationController
   def new
+    @user = User.new
   end
 
   def create
-    @user = User.new(username: params[:username], email: params[:email], password: params[:password])
+    # form_tag version
+    #@user = User.new(username: params[:username], email: params[:email], password: params[:password])
     #@user = User.new(user: params[:user]) #Hash cannot be directly used
-    #@user = User.new(user_params)
+
+    # form_for version
+    @user = User.new(user_params)
 
     if @user.save
       redirect_to new_user_path
@@ -16,11 +20,9 @@ class UsersController < ApplicationController
     end
   end
 
-=begin
   private
   def user_params
     params.require(:user).permit(:username, :password, :email)
   end
-=end
 
 end

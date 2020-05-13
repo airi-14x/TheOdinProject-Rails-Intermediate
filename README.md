@@ -44,7 +44,7 @@ Creation: August 30th 2019
 | Project - Forms | |
 | - Back End Setup | May 11th 2020 |
 | - HTML Form | May 12th 2020|
-| - Railsy Forms with #form_tag| |
-| - Railsy-er Forms with #form_for| |
+| - Railsy Forms with #form_tag| May 13th 2020|
+| - Railsy-er Forms with #form_for| May 13th 2020|
 | - Editing| |
 | - Extra Credit| |
