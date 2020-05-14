@@ -23,8 +23,9 @@
   <%#= submit_tag("Submit") %>
 <%# end %>
 
-<h3>Edit a User </h3>
+<h1>Edit a User </h1>
 <%= form_for @user do |f| %>
+<%= render partial: "form_users_errors" %>
   <%= f.label "Username" %>
   <%= f.text_field :username, placeholder: "Your username here" %> <br/>
   <%= f.label "Password" %>

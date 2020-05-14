@@ -3537,3 +3537,539 @@ Processing by UsersController#update as HTML
 Completed 200 OK in 76ms (Views: 8.9ms | ActiveRecord: 1.3ms | Allocations: 14466)
 
 
+Started GET "/users/3/edit" for ::1 at 2020-05-14 11:28:43 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 36.1ms | Allocations: 3316)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 103ms (Views: 79.3ms | ActiveRecord: 0.9ms | Allocations: 17236)
+
+
+Started PATCH "/users/3" for ::1 at 2020-05-14 11:28:55 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"fSBrIG0E2Gifp5RgpkVCGLGj7qFvBuhBdKkLYhCf7A3P8ykPZkRlutNbAL0PVJsLN6aOxJSjQHQ9STX5jjR77w==", "user"=>{"username"=>"sss", "password"=>"[FILTERED]", "email"=>"aa33@gmail.com"}, "commit"=>"Update User", "id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "aa33@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "aa33@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 3.9ms | Allocations: 990)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 33.9ms | ActiveRecord: 1.3ms | Allocations: 14866)
+
+
+Started PATCH "/users/3" for ::1 at 2020-05-14 11:29:38 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"fSBrIG0E2Gifp5RgpkVCGLGj7qFvBuhBdKkLYhCf7A3P8ykPZkRlutNbAL0PVJsLN6aOxJSjQHQ9STX5jjR77w==", "user"=>{"username"=>"sss", "password"=>"[FILTERED]", "email"=>"aa33@gmail.com"}, "commit"=>"Update User", "id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "aa33@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "aa33@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+Completed 500 Internal Server Error in 404ms (ActiveRecord: 1.7ms | Allocations: 112822)
+
+
+  
+NameError (undefined local variable or method `_form_users_errors' for #<UsersController:0x00007f97f10a1708>):
+  
+app/controllers/users_controller.rb:34:in `update'
+Started PATCH "/users/3" for ::1 at 2020-05-14 11:30:47 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"fSBrIG0E2Gifp5RgpkVCGLGj7qFvBuhBdKkLYhCf7A3P8ykPZkRlutNbAL0PVJsLN6aOxJSjQHQ9STX5jjR77w==", "user"=>{"username"=>"sss", "password"=>"[FILTERED]", "email"=>"aa33@gmail.com"}, "commit"=>"Update User", "id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "aa33@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "aa33@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form_users_errors.html.erb (Duration: 0.7ms | Allocations: 1194)
+  Rendered users/edit.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1902)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 1.5ms | Allocations: 17851)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% if @user.errors.any? %>
+   <div id="error_explanation">
+      <h3><%= pluralize(@user.errors.count,"error") %>This user will not be saved:</h3>
+   </div>
+
+   <ul>
+     <% @user.errors.full_messages.each do |msg| %>
+     <li><%= msg %></li>
+   </ul>
+<% end %>
+
+):
+1:    <% if @user.errors.any? %>
+2:       <div id="error_explanation">
+3:          <h3><%= pluralize(@user.errors.count,"error") %>This user will not be saved:</h3>
+4:       </div>
+5:    
+6:       <ul>
+7:         <% @user.errors.full_messages.each do |msg| %>
+8:         <li><%= msg %></li>
+9:       </ul>
+10:    <% end %>
+  
+app/views/users/_form_users_errors.html.erb:12: syntax error, unexpected end-of-input, expecting end
+app/views/users/_form_users_errors.html.erb:12: syntax error, unexpected end-of-input, expecting end
+app/views/users/_form_users_errors.html.erb:12: syntax error, unexpected end-of-input, expecting end
+app/views/users/_form_users_errors.html.erb:12: syntax error, unexpected end-of-input, expecting end
+app/views/users/_form_users_errors.html.erb:12: syntax error, unexpected end-of-input, expecting end
+app/views/users/_form_users_errors.html.erb:12: syntax error, unexpected end-of-input, expecting end
+app/views/users/edit.html.erb:28
+app/views/users/edit.html.erb:27
+app/controllers/users_controller.rb:34:in `update'
+Started PATCH "/users/3" for ::1 at 2020-05-14 11:31:50 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"fSBrIG0E2Gifp5RgpkVCGLGj7qFvBuhBdKkLYhCf7A3P8ykPZkRlutNbAL0PVJsLN6aOxJSjQHQ9STX5jjR77w==", "user"=>{"username"=>"sss", "password"=>"[FILTERED]", "email"=>"aa33@gmail.com"}, "commit"=>"Update User", "id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "aa33@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "aa33@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form_users_errors.html.erb (Duration: 0.8ms | Allocations: 1194)
+  Rendered users/edit.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1893)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 1.2ms | Allocations: 12771)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% if @user.errors.any? %>
+   <div id="error_explanation">
+      <h3><%= pluralize(@user.errors.count,"error") %>This user will not be saved:</h3>
+   <ul>
+     <% @user.errors.full_messages.each do |msg| %>
+     <li><%= msg %></li>
+   </ul>
+    </div>
+<% end %>
+
+):
+1:    <% if @user.errors.any? %>
+2:       <div id="error_explanation">
+3:          <h3><%= pluralize(@user.errors.count,"error") %>This user will not be saved:</h3>
+4:       <ul>
+5:         <% @user.errors.full_messages.each do |msg| %>
+6:         <li><%= msg %></li>
+7:       </ul>
+8:        </div>
+9:    <% end %>
+  
+app/views/users/_form_users_errors.html.erb:11: syntax error, unexpected end-of-input, expecting end
+app/views/users/_form_users_errors.html.erb:11: syntax error, unexpected end-of-input, expecting end
+app/views/users/_form_users_errors.html.erb:11: syntax error, unexpected end-of-input, expecting end
+app/views/users/_form_users_errors.html.erb:11: syntax error, unexpected end-of-input, expecting end
+app/views/users/_form_users_errors.html.erb:11: syntax error, unexpected end-of-input, expecting end
+app/views/users/_form_users_errors.html.erb:11: syntax error, unexpected end-of-input, expecting end
+app/views/users/edit.html.erb:28
+app/views/users/edit.html.erb:27
+app/controllers/users_controller.rb:34:in `update'
+Started PATCH "/users/3" for ::1 at 2020-05-14 11:32:21 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"fSBrIG0E2Gifp5RgpkVCGLGj7qFvBuhBdKkLYhCf7A3P8ykPZkRlutNbAL0PVJsLN6aOxJSjQHQ9STX5jjR77w==", "user"=>{"username"=>"sss", "password"=>"[FILTERED]", "email"=>"aa33@gmail.com"}, "commit"=>"Update User", "id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "aa33@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "aa33@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form_users_errors.html.erb (Duration: 2.0ms | Allocations: 339)
+  Rendered users/edit.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1943)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 58ms (Views: 23.9ms | ActiveRecord: 1.3ms | Allocations: 16401)
+
+
+Started PATCH "/users/3" for ::1 at 2020-05-14 11:32:55 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"fSBrIG0E2Gifp5RgpkVCGLGj7qFvBuhBdKkLYhCf7A3P8ykPZkRlutNbAL0PVJsLN6aOxJSjQHQ9STX5jjR77w==", "user"=>{"username"=>"sss", "password"=>"[FILTERED]", "email"=>"aa33@gmail.com"}, "commit"=>"Update User", "id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "aa33@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "aa33@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form_users_errors.html.erb (Duration: 0.6ms | Allocations: 324)
+  Rendered users/edit.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1916)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 11.0ms | ActiveRecord: 1.1ms | Allocations: 16317)
+
+
+Started PATCH "/users/3" for ::1 at 2020-05-14 11:33:04 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"fSBrIG0E2Gifp5RgpkVCGLGj7qFvBuhBdKkLYhCf7A3P8ykPZkRlutNbAL0PVJsLN6aOxJSjQHQ9STX5jjR77w==", "user"=>{"username"=>"sss", "password"=>"[FILTERED]", "email"=>"aa33@gmail.com"}, "commit"=>"Update User", "id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "aa33@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "aa33@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form_users_errors.html.erb (Duration: 0.6ms | Allocations: 324)
+  Rendered users/edit.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1916)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 12.8ms | ActiveRecord: 1.3ms | Allocations: 16322)
+
+
+Started PATCH "/users/3" for ::1 at 2020-05-14 11:33:16 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"fSBrIG0E2Gifp5RgpkVCGLGj7qFvBuhBdKkLYhCf7A3P8ykPZkRlutNbAL0PVJsLN6aOxJSjQHQ9STX5jjR77w==", "user"=>{"username"=>"sss", "password"=>"[FILTERED]", "email"=>"aa33@gmail.com"}, "commit"=>"Update User", "id"=>"3"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "aa33@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "aa33@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form_users_errors.html.erb (Duration: 0.7ms | Allocations: 324)
+  Rendered users/edit.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1922)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 11.9ms | ActiveRecord: 2.5ms | Allocations: 16341)
+
+
+Started PATCH "/users/3" for ::1 at 2020-05-14 11:33:34 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"vlc25uEsCANLxD3v600Obm3lEahMdfRIdzvZKeCbnesMhHTJ6my10Qc4qTJCXNd96+BxzbfQXH0+2+eyfjAKCQ==", "user"=>{"username"=>"sss", "password"=>"[FILTERED]", "email"=>"rere@gmail.com"}, "commit"=>"Update User", "id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "rere@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "rere@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form_users_errors.html.erb (Duration: 0.5ms | Allocations: 285)
+  Rendered users/edit.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1331)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 18.1ms | ActiveRecord: 1.3ms | Allocations: 15473)
+
+
+Started PATCH "/users/3" for ::1 at 2020-05-14 11:34:17 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"vlc25uEsCANLxD3v600Obm3lEahMdfRIdzvZKeCbnesMhHTJ6my10Qc4qTJCXNd96+BxzbfQXH0+2+eyfjAKCQ==", "user"=>{"username"=>"sss", "password"=>"[FILTERED]", "email"=>"rere@gmail.com"}, "commit"=>"Update User", "id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "rere@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "rere@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form_users_errors.html.erb (Duration: 0.8ms | Allocations: 460)
+  Rendered users/edit.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2053)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 10.9ms | ActiveRecord: 1.2ms | Allocations: 17079)
+
+
+Started PATCH "/users/3" for ::1 at 2020-05-14 11:34:21 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"30vkAjdsSY0+OxPXeBEHBfA+nPCI5FzlM9lsCEz0ivZtmKYtPCz0X3LHhwrRAN4Wdjv8lXNB9NB6OVKT0l8dFA==", "user"=>{"username"=>"sss", "password"=>"[FILTERED]", "email"=>"rere@gmail.com"}, "commit"=>"Update User", "id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "rere@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "rere@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form_users_errors.html.erb (Duration: 0.5ms | Allocations: 413)
+  Rendered users/edit.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1460)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 8.5ms | ActiveRecord: 0.9ms | Allocations: 16238)
+
+
+Started PATCH "/users/3" for ::1 at 2020-05-14 11:35:06 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"30vkAjdsSY0+OxPXeBEHBfA+nPCI5FzlM9lsCEz0ivZtmKYtPCz0X3LHhwrRAN4Wdjv8lXNB9NB6OVKT0l8dFA==", "user"=>{"username"=>"sss", "password"=>"[FILTERED]", "email"=>"rere@gmail.com"}, "commit"=>"Update User", "id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "rere@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "rere@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form_users_errors.html.erb (Duration: 0.9ms | Allocations: 589)
+  Rendered users/edit.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2189)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 11.7ms | ActiveRecord: 1.0ms | Allocations: 17808)
+
+
+Started PATCH "/users/3" for ::1 at 2020-05-14 11:36:08 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"30vkAjdsSY0+OxPXeBEHBfA+nPCI5FzlM9lsCEz0ivZtmKYtPCz0X3LHhwrRAN4Wdjv8lXNB9NB6OVKT0l8dFA==", "user"=>{"username"=>"sss", "password"=>"[FILTERED]", "email"=>"rere@gmail.com"}, "commit"=>"Update User", "id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "rere@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "rere@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form_users_errors.html.erb (Duration: 0.7ms | Allocations: 1243)
+  Rendered users/edit.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1940)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.0ms | Allocations: 13998)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% if @user.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@user.errors.count,"error") %> - This user will not be saved:</h2>
+    <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+    </ul>
+    <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+    </ul>
+  </div>
+  <% end %>
+<% end %>
+
+):
+1:    <% if @user.errors.any? %>
+2:      <div id="error_explanation">
+3:        <h2><%= pluralize(@user.errors.count,"error") %> - This user will not be saved:</h2>
+4:        <ul>
+5:          <% @user.errors.full_messages.each do |msg| %>
+6:            <li><%= msg %></li>
+7:        </ul>
+8:        <ul>
+9:          <% @user.errors.full_messages.each do |msg| %>
+10:            <li><%= msg %></li>
+11:        </ul>
+12:      </div>
+13:      <% end %>
+14:    <% end %>
+  
+app/views/users/_form_users_errors.html.erb:16: syntax error, unexpected end-of-input, expecting end
+app/views/users/_form_users_errors.html.erb:16: syntax error, unexpected end-of-input, expecting end
+app/views/users/_form_users_errors.html.erb:16: syntax error, unexpected end-of-input, expecting end
+app/views/users/_form_users_errors.html.erb:16: syntax error, unexpected end-of-input, expecting end
+app/views/users/_form_users_errors.html.erb:16: syntax error, unexpected end-of-input, expecting end
+app/views/users/_form_users_errors.html.erb:16: syntax error, unexpected end-of-input, expecting end
+app/views/users/edit.html.erb:28
+app/views/users/edit.html.erb:27
+app/controllers/users_controller.rb:34:in `update'
+Started PATCH "/users/3" for ::1 at 2020-05-14 11:36:50 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"30vkAjdsSY0+OxPXeBEHBfA+nPCI5FzlM9lsCEz0ivZtmKYtPCz0X3LHhwrRAN4Wdjv8lXNB9NB6OVKT0l8dFA==", "user"=>{"username"=>"sss", "password"=>"[FILTERED]", "email"=>"rere@gmail.com"}, "commit"=>"Update User", "id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "rere@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "rere@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form_users_errors.html.erb (Duration: 0.9ms | Allocations: 602)
+  Rendered users/edit.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2202)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 12.2ms | ActiveRecord: 1.2ms | Allocations: 17825)
+
+
+Started PATCH "/users/3" for ::1 at 2020-05-14 11:41:20 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"30vkAjdsSY0+OxPXeBEHBfA+nPCI5FzlM9lsCEz0ivZtmKYtPCz0X3LHhwrRAN4Wdjv8lXNB9NB6OVKT0l8dFA==", "user"=>{"username"=>"sss", "password"=>"[FILTERED]", "email"=>"rere@gmail.com"}, "commit"=>"Update User", "id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "rere@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sss"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "rere@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form_users_errors.html.erb (Duration: 1.4ms | Allocations: 595)
+  Rendered users/edit.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2190)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 16.7ms | ActiveRecord: 0.9ms | Allocations: 17797)
+
+
