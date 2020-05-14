@@ -46,5 +46,5 @@ Creation: August 30th 2019
 | - HTML Form | May 12th 2020|
 | - Railsy Forms with #form_tag| May 13th 2020|
 | - Railsy-er Forms with #form_for| May 13th 2020|
-| - Editing| |
-| - Extra Credit| |
+| - Editing| May 14th 2020|
+| - Extra Credit| May 14th 2020|
