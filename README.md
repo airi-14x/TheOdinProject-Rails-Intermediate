@@ -48,3 +48,11 @@ Creation: August 30th 2019
 | - Railsy-er Forms with #form_for| May 13th 2020|
 | - Editing| May 14th 2020|
 | - Extra Credit| May 14th 2020|
+| - Sessions, Cookies, and Authentication: Intro | |
+| Assignment - Sessions, Cookies, and Authentication | |
+| - Read Rails Session Article | |
+| - Watch Rails Session Video | |
+| - Read Rails Guides on Controllers: Section 5 & Section 6 | |
+| - Read Rails Guides on Controllers: Section 8 | |
+| - Read Rails Guides on Controllers: Section 11 | |
+| - Checkout Devise Documentation | |
