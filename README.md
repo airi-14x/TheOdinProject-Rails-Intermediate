@@ -35,21 +35,21 @@ Creation: August 30th 2019
 
 | Forms and Authentication |  |
 | --------| -----|
-| - Form Basics: Intro | March 10th 2020 |
-| Assignment - Form Basics | |
+| **Form Basics: Intro** | March 10th 2020 |
+| **Assignment - Form Basics** | |
 | - Rails Guide on Form Helpers (Section 1 -> 3.2) | April 12th 2020 |
 | - Skim Section 3.3 -> 7| May 10th 2020 |
 | - Read Section 7.1 -> 7.2| May 10th 2020 |
 | - Rails Guide on Validations - Section 8| May 10th 2020 |
-| Project - Forms | |
+| **Project - Forms** | |
 | - Back End Setup | May 11th 2020 |
 | - HTML Form | May 12th 2020|
 | - Railsy Forms with #form_tag| May 13th 2020|
 | - Railsy-er Forms with #form_for| May 13th 2020|
 | - Editing| May 14th 2020|
 | - Extra Credit| May 14th 2020|
-| - Sessions, Cookies, and Authentication: Intro | |
-| Assignment - Sessions, Cookies, and Authentication | |
+| **Sessions, Cookies, and Authentication: Intro** | |
+| **Assignment - Sessions, Cookies, and Authentication** | |
 | - Read Rails Session Article | |
 | - Watch Rails Session Video | |
 | - Read Rails Guides on Controllers: Section 5 & Section 6 | |
