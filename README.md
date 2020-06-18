@@ -48,7 +48,7 @@ Creation: August 30th 2019
 | - Railsy-er Forms with #form_for| May 13th 2020|
 | - Editing| May 14th 2020|
 | - Extra Credit| May 14th 2020|
-| **Sessions, Cookies, and Authentication: Intro** | |
+| **Sessions, Cookies, and Authentication: Intro** | June 18th 2020|
 | **Assignment - Sessions, Cookies, and Authentication** | |
 | - Read Rails Session Article | |
 | - Watch Rails Session Video | |
