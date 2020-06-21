@@ -50,8 +50,8 @@ Creation: August 30th 2019
 | - Extra Credit| May 14th 2020|
 | **Sessions, Cookies, and Authentication: Intro** | June 18th 2020|
 | **Assignment - Sessions, Cookies, and Authentication** | |
-| - Read Rails Session Article | |
-| - Watch Rails Session Video | |
+| - Read Rails Session Article | June 21st 2020|
+| - Watch Rails Session Video | June 21st 2020|
 | - Read Rails Guides on Controllers: Section 5 & Section 6 | |
 | - Read Rails Guides on Controllers: Section 8 | |
 | - Read Rails Guides on Controllers: Section 11 | |
