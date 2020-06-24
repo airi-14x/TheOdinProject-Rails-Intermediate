@@ -53,6 +53,6 @@ Creation: August 30th 2019
 | - Read Rails Session Article | June 21st 2020|
 | - Watch Rails Session Video | June 21st 2020|
 | - Read Rails Guides on Controllers: Section 5 & Section 6 | June 23rd 2020|
-| - Read Rails Guides on Controllers: Section 8 | |
-| - Read Rails Guides on Controllers: Section 11 | |
+| - Read Rails Guides on Controllers: Section 8 | June 24th 2020|
+| - Read Rails Guides on Controllers: Section 11 | June 24th 2020|
 | - Checkout Devise Documentation | |
