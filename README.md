@@ -59,4 +59,9 @@ Creation: August 30th 2019
 | - Read Rails Guides on Controllers: Section 5 & Section 6 | June 23rd 2020|
 | - Read Rails Guides on Controllers: Section 8 | June 24th 2020|
 | - Read Rails Guides on Controllers: Section 11 | June 24th 2020|
-| - Checkout Devise Documentation | |
+| - Checkout Devise Documentation | June 29th 2020|
+| **Project - Authentication** | |
+| - Project 1: Build a Twitter Clone | |
+| >> Part 1 | |
+| >> Part 2 | |
+| >> Part 3 | |
