@@ -13,3 +13,115 @@ Migrating to CreateTweeets (20200630124035)
   [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-06-30 08:45:29 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/Airi/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/Airi/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 20.4ms | Allocations: 488)
+Completed 200 OK in 45ms (Views: 30.4ms | ActiveRecord: 0.0ms | Allocations: 2798)
+
+
+Started GET "/" for ::1 at 2020-06-30 08:47:47 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.2ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/index.html.erb:14
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 1357)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Airi/Documents/TheOdinProject-Rails/twittter/public/packs
+[Webpacker] Hash: 15d1bb7b54cf6326b9ba
+Version: webpack 4.43.0
+Time: 3314ms
+Built at: 06/30/2020 8:47:54 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9afcbb5693aa87623e69.js    124 KiB  application  [emitted] [immutable]  application
+js/application-9afcbb5693aa87623e69.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9afcbb5693aa87623e69.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 7091ms (Views: 7085.9ms | ActiveRecord: 1.1ms | Allocations: 23794)
+
+
+Started GET "/tweeets/new" for ::1 at 2020-06-30 08:48:01 -0400
+Processing by TweeetsController#new as HTML
+  Rendering tweeets/new.html.erb within layouts/application
+  Rendered tweeets/_form.html.erb (Duration: 39.8ms | Allocations: 4761)
+  Rendered tweeets/new.html.erb within layouts/application (Duration: 41.1ms | Allocations: 5114)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 64ms (Views: 53.6ms | ActiveRecord: 0.9ms | Allocations: 11823)
+
+
+Started POST "/tweeets" for ::1 at 2020-06-30 08:48:05 -0400
+Processing by TweeetsController#create as HTML
+  Parameters: {"authenticity_token"=>"QcFUjVxeqFrgsOimFdxDaBNszRK9+iLOcL8eqqj/Wsm3eNJ9HonZqPqtKlui1JfZN9ka2Q/gY44fxGy51f+EaA==", "tweeet"=>{"tweeet"=>"hello~"}, "commit"=>"Create Tweeet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tweeets_controller.rb:30:in `block in create'
+  [1m[36mTweeet Create (0.8ms)[0m  [1m[32mINSERT INTO "tweeets" ("tweeet", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["tweeet", "hello~"], ["created_at", "2020-06-30 12:48:05.575231"], ["updated_at", "2020-06-30 12:48:05.575231"]]
+  ↳ app/controllers/tweeets_controller.rb:30:in `block in create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tweeets_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/tweeets/1
+Completed 302 Found in 10ms (ActiveRecord: 1.9ms | Allocations: 2904)
+
+
+Started GET "/tweeets/1" for ::1 at 2020-06-30 08:48:05 -0400
+Processing by TweeetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTweeet Load (0.3ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" WHERE "tweeets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tweeets_controller.rb:67:in `set_tweeet'
+  Rendering tweeets/show.html.erb within layouts/application
+  Rendered tweeets/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 245)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 11.9ms | ActiveRecord: 0.3ms | Allocations: 5271)
+
+
+Started GET "/tweeets" for ::1 at 2020-06-30 08:48:07 -0400
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.1ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/index.html.erb:14
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 770)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.1ms | Allocations: 4672)
+
+
+Started GET "/tweeets/1" for ::1 at 2020-06-30 08:48:18 -0400
+Processing by TweeetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTweeet Load (0.3ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" WHERE "tweeets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tweeets_controller.rb:67:in `set_tweeet'
+  Rendering tweeets/show.html.erb within layouts/application
+  Rendered tweeets/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 78)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 10.5ms | ActiveRecord: 0.3ms | Allocations: 4517)
+
+
+Started GET "/tweeets" for ::1 at 2020-06-30 08:48:19 -0400
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.9ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/index.html.erb:14
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 766)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.9ms | Allocations: 4667)
+
+
+Started GET "/tweeets" for ::1 at 2020-06-30 09:03:10 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.3ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/index.html.erb:14
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 13.2ms | Allocations: 4531)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2028ms (Views: 2017.6ms | ActiveRecord: 1.2ms | Allocations: 139798)
+
+
