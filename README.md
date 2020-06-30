@@ -2,6 +2,7 @@
 ## Ruby on Rails Track
 Creation: August 30th 2019
 
+### RoR Tutorial Assignments
 | RoR Tutorial Assignments | Completion Date |
 | ------| --------------- |
 | Ch.3: Static Pages | October 8th 2019 |
@@ -9,6 +10,7 @@ Creation: August 30th 2019
 | Ch.5: Filling in the Layout | January 6th 2020|
 | Ch.6: Modeling Users | February 9th 2020|
 
+### Routes, Views, Controllers and Assets
 | Routes, Views, Controllers and Assets| |
 | ------| --------------- |
 | Routing | November 5th 2019|
@@ -17,6 +19,7 @@ Creation: August 30th 2019
 | Asset Pipeline | December 27th 2019 |
 | Project - Warmup: Sending Params with RestClient | December 29th 2019 |
 
+### Active Record Basics
 | Active Record Basics | |
 | ------| --------------- |
 | - Basic Active Record | January 13th 2020 |
@@ -33,6 +36,7 @@ Creation: August 30th 2019
 | >> Playing with Associations| February 13th 2020|
 | >> Add in Commenting| February 13th 2020|
 
+### Forms and Authentication
 | Forms and Authentication |  |
 | --------| -----|
 | **Form Basics: Intro** | March 10th 2020 |
@@ -55,4 +59,9 @@ Creation: August 30th 2019
 | - Read Rails Guides on Controllers: Section 5 & Section 6 | June 23rd 2020|
 | - Read Rails Guides on Controllers: Section 8 | June 24th 2020|
 | - Read Rails Guides on Controllers: Section 11 | June 24th 2020|
-| - Checkout Devise Documentation | |
+| - Checkout Devise Documentation | June 29th 2020|
+| **Project - Authentication** | |
+| - Project 1: Build a Twitter Clone | |
+| >> Part 1 | |
+| >> Part 2 | |
+| >> Part 3 | |
