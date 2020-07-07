@@ -63,5 +63,5 @@ Creation: August 30th 2019
 | **Project - Authentication** | |
 | - Project 1: Build a Twitter Clone | |
 | >> Part 1 | June 30th 2020|
-| >> Part 2 | |
+| >> Part 2 | July 7th 2020|
 | >> Part 3 | |
