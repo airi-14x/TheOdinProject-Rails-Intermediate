@@ -64,4 +64,7 @@ Creation: August 30th 2019
 | - Project 1: Build a Twitter Clone | |
 | >> Part 1 | June 30th 2020|
 | >> Part 2 | July 7th 2020|
-| >> Part 3 | |
+| >> Part 3 | July 8th 2020|
+| - Project 2: Members Only! | |
+| >> Basic Setup | |
+| >> Authentication and Posts | |
