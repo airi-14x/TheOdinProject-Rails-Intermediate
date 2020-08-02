@@ -1,6 +1,6 @@
 # TheOdinProject-Rails
 ## Ruby on Rails Track
-Creation: August 30th 2019
+Created: August 30th 2019
 
 Status: WIP
 
