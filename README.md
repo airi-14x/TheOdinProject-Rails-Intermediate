@@ -67,6 +67,3 @@ Status: WIP
 | >> Part 1 | June 30th 2020|
 | >> Part 2 | July 7th 2020|
 | >> Part 3 | July 8th 2020|
-| - Project 2: Members Only! | |
-| >> Basic Setup | |
-| >> Authentication and Posts | |
