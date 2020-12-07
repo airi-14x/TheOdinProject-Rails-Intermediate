@@ -2,7 +2,7 @@
 ## Ruby on Rails Track
 Created: August 30th 2019
 
-Status: WIP
+Status: Archiving and creating Advanced Rails Repo!
 
 ### RoR Tutorial Assignments
 | RoR Tutorial Assignments | Completion Date |
